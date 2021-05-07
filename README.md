@@ -4,4 +4,4 @@ Tarea Vue: Components, Vuex, Router Y Axios | Programación Web
 
 ## Demo
 
-![demo](https://github.com/urielexis64/vuex_exercise1/blob/main/src/assets/demo.mp4)
+![demo](https://github.com/urielexis64/vuex_exercise1/blob/main/src/assets/demo.gif)
