@@ -1,14 +1,12 @@
 <template>
-	<router-link :to="`/detail/${id}`">
-		<div
-			class="card"
-			:class="{'hover-animation': hoverAnimation}"
-			:style="{backgroundColor, color: textColor}"
-		>
-			<h3>{{ text }}</h3>
-			<h4>{{ id }}</h4>
-		</div>
-	</router-link>
+	<div
+		class="card"
+		:class="{'hover-animation': hoverAnimation}"
+		:style="{backgroundColor, color: textColor}"
+	>
+		<h3>{{ text }}</h3>
+		<h4>{{ id }}</h4>
+	</div>
 </template>
 
 <script>

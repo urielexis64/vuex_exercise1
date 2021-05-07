@@ -15,9 +15,9 @@
 			</div>
 			<div v-else>
 				<div class="fadeInLate">
-					<h2>ERROR 404 NOT FOUND</h2>
+					<h2 class="not-found">ERROR 404 NOT FOUND</h2>
 					<p>El ID "{{ $route.params.id }}" no existe.</p>
-					<img src="../assets/notfound.gif" alt="" />
+					<img width="30%" src="../assets/notfound.gif" alt="" />
 				</div>
 			</div>
 		</transition>
@@ -49,7 +49,25 @@ export default {
 	padding: 8px;
 }
 
+h2.not-found {
+	color: white;
+	font-size: 62px;
+	letter-spacing: 12px;
+	text-shadow: 8px 2px 0 grey;
+}
+
+img {
+	filter: drop-shadow(8px 2px 8px var(--red));
+	animation: not-found 1s linear infinite alternate;
+}
+
 h3 {
 	color: var(--primary-color);
+}
+
+@keyframes not-found {
+	to {
+		filter: drop-shadow(8px 2px 8px var(--primary-color));
+	}
 }
 </style>

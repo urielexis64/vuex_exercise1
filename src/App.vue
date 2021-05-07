@@ -18,6 +18,8 @@
 <style>
 :root {
 	--primary-color: #42b983;
+	--red: #ff5c49;
+	--blue: #1782ff;
 }
 * {
 	font-family: Poppins, Helvetica, Arial, sans-serif;

@@ -6,15 +6,17 @@
 			<img width="10%" src="../assets/loading.svg" alt="loading" />
 		</div>
 		<div v-else v-for="(fact, index) in facts" :key="index">
-			<Card
-				:text="fact.text"
-				:id="fact._id"
-				textColor="#1782ff"
-				backgroundColor="#fefefe"
-				:hoverAnimation="true"
-				:style="`--i: .${index}s;`"
-				class="fadeIn-delayed"
-			/>
+			<router-link :to="`/detail/${fact._id}`">
+				<Card
+					:text="fact.text"
+					:id="fact._id"
+					textColor="#1782ff"
+					backgroundColor="#fefefe"
+					:hoverAnimation="true"
+					:style="`--i: .${index}s;`"
+					class="fadeIn-delayed"
+				/>
+			</router-link>
 		</div>
 		<router-link v-if="facts.length !== 0" :to="'/detail/abc123'">
 			<Card
@@ -54,7 +56,7 @@ export default {
 a,
 a:visited {
 	text-decoration: none;
-	color: #1782ff;
+	color: var(--blue);
 }
 
 h4 {

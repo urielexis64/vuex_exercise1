@@ -1,7 +1,9 @@
 <template>
 	<div class="random">
 		<h1 class="scaleUp">Mi dato random</h1>
-		<button @click="getRandomFact" class="btn btn-primary fadeInDown">Dato random</button>
+		<button @click="getRandomFact" class="btn btn-primary fadeInDown">
+			Dato random
+		</button>
 		<hr class="fadeIn" />
 		<div v-if="randomFact">
 			<transition name="fadeInUp" mode="out-in">
@@ -81,11 +83,11 @@ p.quote::before {
 }
 
 .verified {
-	background-color: #3db276;
+	background-color: var(--primary-color);
 }
 
 .unverified {
-	background-color: #ff5c49;
+	background-color: var(--red);
 }
 
 .badge {
