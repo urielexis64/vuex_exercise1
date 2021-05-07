@@ -1,19 +1,7 @@
 # tarea1
 
-## Project setup
-```
-npm install
-```
+Tarea Vue: Components, Vuex, Router Y Axios | Programación Web
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Demo
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![demo](https://github.com/urielexis64/vuex_exercise1/blob/ea2fd791d9c24d40632aca5cccbf0959442df466/src/assets/demo.mp4)
